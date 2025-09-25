@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ismael Saleh - Portfolio</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif}
+        html,body{height:100%;scroll-behavior:smooth}
+        body{color:#fff;line-height:1.6}
+
+        a{color:#00d9ff;text-decoration:none}
+        a:hover{text-decoration:underline}
+
+        /* ===== NAVBAR ===== */
+        nav{
+            position:fixed;top:0;left:0;width:100%;
+            background:rgba(0,0,0,0.6);
+            backdrop-filter:blur(10px);
+            display:flex;justify-content:center;gap:25px;
+            padding:15px 0;z-index:1000;
+        }
+        nav a{color:#fff;font-weight:500;transition:0.3s}
+        nav a:hover{color:#00d9ff}
+
+        /* ===== SECTIONS ===== */
+        section{
+            min-height:100vh;
+            display:flex;flex-direction:column;align-items:center;justify-content:center;
+            text-align:center;padding:20px;
+        }
+        section h1, section h2{margin-bottom:20px}
+        section p{max-width:700px;margin:auto}
+
+        /* ===== HERO ===== */
+        .hero{
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+        }
+        .hero img{
+            width:160px;height:160px;border-radius:50%;
+            border:4px solid #00d9ff;object-fit:cover;
+            box-shadow:0 0 20px rgba(0,217,255,0.6);margin-bottom:15px;
+        }
+        .hero h1{font-size:2.8rem}
+        .hero p{color:#ccc;font-size:1.2rem;margin-bottom:20px}
+        .btn{
+            padding:12px 24px;border-radius:30px;
+            background:#00d9ff;color:#000;font-weight:600;
+            transition:0.3s;display:inline-block;
+        }
+        .btn:hover{background:#00aacc;color:#fff}
+
+        /* ===== OTHER SECTIONS BG ===== */
+        .about{background:linear-gradient(135deg,#182c3a,#0f2027);}
+        .education{background:linear-gradient(135deg,#2c5364,#203a43);}
+        .skills{background:linear-gradient(135deg,#0f2027,#182c3a);}
+        .projects{background:linear-gradient(135deg,#203a43,#2c5364);}
+        .achievements{background:linear-gradient(135deg,#182c3a,#0f2027);}
+        .contact{background:linear-gradient(135deg,#2c5364,#203a43);}
+
+        /* ===== SKILLS ===== */
+        .skills span{
+            display:inline-block;background:#00d9ff22;color:#00d9ff;
+            padding:8px 14px;border-radius:8px;margin:6px;font-size:0.95rem;
+            transition:background 0.3s,transform 0.3s;
+        }
+        .skills span:hover{background:#00d9ff44;transform:scale(1.05)}
+
+        /* ===== CONTACT ===== */
+        .contact-info div{margin:10px 0}
+        .badge{
+            display:inline-block;margin-top:15px;padding:6px 14px;
+            background:#00d9ff33;border-radius:20px;font-size:0.9rem;
+            color:#00d9ff;font-weight:600;
+        }
+
+        /* ===== FOOTER ===== */
+        footer{
+            text-align:center;padding:15px;background:#0b171d;color:#aaa;font-size:0.9rem;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media(max-width:768px){
+            nav{gap:15px;font-size:0.9rem}
+            .hero h1{font-size:2rem}
+            .hero p{font-size:1rem}
+        }
+    </style>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+    <!-- ✨ حط صورتك مكان me.jpg ✨ -->
+    <img src="me.jpg" alt="My Photo">
+    <h1>Ismael Saleh</h1>
+    <p>SOC Analyst - DFIR | Information Security Student</p>
+    <a href="https://drive.google.com/file/d/1Gfqpw4SFENDc-0E1WS1f-ZXRLLTHlSmB/view?usp=drive_link" class="btn" target="_blank">Download CV</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I’m an Information Security student passionate about SOC, DFIR, and Threat Hunting.
+        I trained with the Digital Egypt Pioneers Initiative (DEPI) and enjoy working on cybersecurity labs and real-world challenges.
+        I’m always open to learning and collaborating.
+    </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="education">
+    <h2>Education</h2>
+    <ul>
+        <li>Faculty of Computer and Information Science, Menoufia University</li>
+        <li>Information Security Analyst Trainee @ DEPI</li>
+    </ul>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div>
+        <strong>Technical:</strong><br>
+        <span>C++</span><span>Python</span><span>CCNA</span><span>Security+</span>
+        <span>Wireshark</span><span>Linux</span>
+        <br><br>
+        <strong>Soft:</strong><br>
+        <span>Problem Solving</span><span>Teamwork</span>
+        <span>Time Management</span><span>Analytical Thinking</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li><a href="https://drive.google.com/file/d/1QyjgySre2-gGelQomVssrUGF6K8Nc5zh/view?usp=sharing" target="_blank">Email Analysis Lab</a></li>
+        <li><a href="https://drive.google.com/file/d/1ol5ia4jpfm39QkgUraO0rCGGtF3iago1/view?usp=sharing" target="_blank">XLMRat Lab</a></li>
+    </ul>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="achievements">
+    <h2>Achievements</h2>
+    <ul>
+        <li>Participation at ECPC (2023 & 2024)</li>
+        <li>Co-coach at ECPC (2024 & 2025)</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+        <div><strong>Email:</strong> <a href="mailto:ismaelsaleh.mail@gmail.com">ismaelsaleh.mail@gmail.com</a></div>
+        <div><strong>Phone:</strong> <a href="tel:+201551783473">+20 155 178 3473</a></div>
+        <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ismael-ahmed-saleh-" target="_blank">Profile</a></div>
+        <div><strong>GitHub:</strong> <a href="https://github.com/soma215" target="_blank">soma215</a></div>
+        <span class="badge">Information Security Student</span>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 Ismael Saleh - Portfolio
+</footer>
+</body>
+</html>
